@@ -7,8 +7,6 @@
     text-decoration: none;/* Remove qualquer decoração do texto (link)
     remove uma linha embaixo do texto */
     font-family: "Kdam Thmor Pro", sans-serif;/*fonte dos textos da página (@import)*/
-
-
 }
 
 body{
@@ -49,7 +47,7 @@ li{
 color: white ;/*cor do texto dos itens da lista */
 font-size: 19px ;/*tamanho do texto dos itens*/
 cursor: pointer;/*cria um cursor ao passar mouse*/
-transition: .5s;/*transição de cor*/
+transition: 0.5s;/*transição de cor*/
 }
 
 li:hover {
@@ -61,12 +59,126 @@ li:hover {
     width: 100%;
     height: 600px;
   /*adiciona uma imagem interna ou externa*/
-    background-image: url("https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1600041290961-QV53ZKSZMYB9IEIVJRMT/image-asset.jpeg");
+    background-image: url("./img/batman-banner.svg");
     background-size: cover;/*deixa a imagem preencher todo o     container sem cortá-la*/
      background-position: 50% 80%;
 }
 
     /*          Começando a seção do trailer         */
 .trailer{
+    width: 60%;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sinopse{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description{
+    color: #ffffff;/*cor da font*/
+    font-size: 18px;/*tamanho font*/
+    width: 70%;/* largura */
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(145, 19, 19);
+    color: ffffff;
+    font-size: 18px;
+    font-weight: bold;/*fazendo com que o texto dentro desses elementos seja exibido em negrito.*/
+    padding: 8px 10px;/*espaçamento interno cima e baixo, direita e esquerda*/
+    border: none;/*tirando as bordas*/
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;/* Alinhando o texto ao centro na horizontal */
+    align-items: center;/* alinhando o texto ao centro na vertical */
+    margin-top: 25px;/*espaçamento superior entre o texto e o botão*/
+    outline: none;/*tirando um linha de contorno do botão*/
+    transition: 0.7s;/*cria efeito de transição*/
+}
+
+
+.button:hover {
+  background-color: #b80b0b;
+  color: #fff;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+}
+
+.banner-1{
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/robert-pattinson-as-batman-bruce-wayne-in-the-batman-1645186686.jpeg?crop=0.607xw:0.911xh;0.318xw,0.0102xh&resize=640:*");
+}
+
+.banner-2{
+    background-image: url("https://images.elle.com.br/2022/08/origin-118.jpg");
+}
+
+.banner-3{
+    background-image: url("https://img-9gag-fun.9cache.com/photo/avAv9Yq_460s.jpg");
+}
+
+.cards-content{
+    width: 90%;/*Lagura*/
+    display: grid;/*Utilizando antes para criar coluna*/
+    grid-template-columns: repeat(3, 1fr);/*Cria 3 colunas com o mesmo espaçamento*/
+    column-gap: 40px;/*Espaçamento entre as colunas*/
+}
+
+.card{
+    background-size: cover;/* Imagem de fundo da div seja redimencionada para cobrir todas a area da div, independentemente das dimenssões da imagem original. */
+    background-position: 50% 10%;/* 1° valor significa que o elemento terá sua posição de fundo definida horizontalmente no centro e o 2° valor verticalmente altura do contêiner. */
+    border-radius: 7px;/*arrendondar os cantos dos cards*/
+    cursor: pointer;/* colocar mouse em cima da imagem cursor muda */
+    display: flex;/*utilizando flex para poder utilizar flex-direction e justify-content*/
+    flex-direction: column;/* deixando em coluna */
+    justify-content: flex-end;/*o texto vai estar no final da coluna*/
+    color: #ffffff;/* cor do texto */
+    font-weight: bold;/*deixando o texto em negrito*/
+    font-size: 17px;/* tamanho da fonte do texto */
+    /* sentido horário */
+    /* cima - deireita - baixo - esquerdo */
+    padding: 0 0 20px 15px;
+    transition: 1s;/*utilizando */
+}
+
+.texto{
+    position: absolute;/* tirando do mesmo fluxo e o texto fica na camada acima */
+    margin-bottom: 20px;/* coloca espaçamento embaixo(externo) */
+    background-color: rgba(0, 0, 0, 0.6);/*cor de fundo com opacidade 1°valor red 2° green 3° blue 4° alpha que faz o elemento ficar com opacidade*/
+    padding: 10px;/*aumenta o fundo em todos os lados(interno)*/
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;/*deixando os elementos filhos centralizados*/
+    margin-top: 50px;/*espaçamento superior */ 
+    margin-bottom: 30px;/*espaçamento inferior (externo)*/
+}
+
+/* aumentando as imagens dos cards quando o mouse passar por cima  */
+.card :hover{
+    transform: scale(1.03);
 }
