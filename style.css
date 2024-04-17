@@ -6,7 +6,7 @@
     list-style: none;/*tira a o estilo da  lista por padrão (as bolinhas)*/
     text-decoration: none;/* Remove qualquer decoração do texto (link)
     remove uma linha embaixo do texto */
-    font-family: "Kdam Thmor Pro", sans-serif;/*fonte dos textos da página (@import)*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*fonte dos textos da página (@import)*/
 }
 
 body{
@@ -181,4 +181,18 @@ li:hover {
 /* aumentando as imagens dos cards quando o mouse passar por cima  */
 .card :hover{
     transform: scale(1.03);
+} 
+
+/* Aqui inicia o rodapé */
+footer{
+    height: 300px;/*altura*/
+    margin-top: 30px;/*espaçamento externo superior*/
+    display: flex;/*utilizando flex para poder alinhar os elementos*/
+    flex-direction: column;/*colocando os elementos em coluna*/
+    align-items: center;/*alinhando os elementos no centro verticalmente*/
+    justify-content: center;/*alinhando os elementos no centro horizontalmente*/
+}
+
+.footer-texto{
+    color: #fff;
 }
