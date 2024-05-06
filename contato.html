@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./outros.css">
+    <title>Cinema Cinesenac - Localizacao</title>
+</head>
+
+<body>
+
+    <!--1° Cabeçalho-------------------------------->
+    <header>
+        <!--adicionando uma imagem-->
+        <!--nome da tag img é id="logo"-->
+        <img id="logo" src="./img/batman-banner-v.png" alt="Logo Batman">
+        <!--Criando nossa  barra de navegação com as tags nav e lista com ul e li-->
+        <nav>
+            <!--Criando nossa  lista com os links das páginas-->
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <!--link 2---------------->
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <!--link3------->
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <!--link4------>
+                <a href="./localizacao.html">
+                    <li>Localização</li>
+                </a>
+            </ul>
+
+        </nav>
+
+    </header>
+<!----------------Cabeçalho finalizado--------------------------->
+<!--------------------------Iniciando banner---------------------------------------->
+<div id="banner"></div>
+
+<div class="contato">
+    <h1>Formulário de contato</h1>
+</div>
+<!-- Formulário -->
+<div class="form-container">
+    <form class="formulario" action="https://formsubmit.co/taua.amaro@escola.pr.gov.br" method="POST">
+        <!-- <div >
+            <input type="hidden" name="_next" value="./sucesso.html">
+        </div>
+      
+        <div>
+            <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obridado pelo contato e logo responderemos!">
+        </div> -->
+        <!-- input nome -->
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+        </div>
+        <!-- input telefone -->
+        <div>
+            <label for="telefone">telefone:</label>
+            <input type="text" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+        </div>
+        <!-- input e-mail -->
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite o email">
+        </div>
+        <!-- input assunto -->
+        <div>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required placeholder="Assunto">
+        </div>
+        <!-- textarea -->
+        <div>
+            <label for="msg">Mensagem:</label>
+            <textarea name="msg" id="msg" required rows="10" placeholder="Mensagem"></textarea>
+        </div>
+        <!-- Botão -->
+        <div>
+            <button type="submit">Enviar sua mensagem</button>
+        </div>
+    </form>
+</div>
+
+
+<!-- Finalizando esta parte que foi estilizada pelo outros.css -->
+
+<!--Footer -> colocamos(a logo nossa imagem), (textos todos os direitos reservados),(por quem foi desenvolvido essas página)(vamos ter uma navegação quando for usar celular) -->
+<footer>
+    <img id="logo" style="object-fit: contain;" src="./img/logo-batman.jpg" alt="logo do Batman">
+    <span class="footer-texto">Todos os direitos reservados © 2024</span>
+    <span class="footer-texto">Desenvolvido por: Tauã Felipe Rocha Amaro</span>
+</footer>
+
+</body>
+
+</html>
