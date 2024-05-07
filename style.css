@@ -196,3 +196,70 @@ footer{
 .footer-texto{
     color: #fff;
 }
+
+/* Display none para desaparecer a navegação e aparecer apenas em dispositivos móveis */
+.footer-navegation{
+    display: none;/* para não aparecer na página normal */
+}
+
+.footer-list{
+    display: flex;/*utilizando flex para poder alinhar os elementos */
+    flex-direction: column;/*colocando os elementos em coluna*/
+    align-items: center;/*alinhando os elementos verticalmentalmente*/
+}
+
+/*  Colocando versão responsiva */
+@media(max-width:768px){/* A tela vai até 726px, a largura aplica essa regra */
+    .footer-navegation{
+        /* cria um bloco que ocupa todo espaço horizontal disponivel */
+        display: block;/*vai fazer aparecer a navegação pelo dispositivo*/
+    }
+    nav{
+        display: none;/* tirando a navegação do header */
+    }
+    #banner{
+        background-position: 50%;/*ajustar o banner ao centro*/
+    }
+
+    .trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;/*utilizando  para utilizando flex-direction*/
+        flex-direction: column;/*colocando elemento em coluna*/
+    }
+    
+    .trailer{
+        width: 100%;
+    }
+    
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;/*utilizando  para utilizando flex-direction*/
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;/*deixando as imagens com apenas uma coluna*/
+        margin-top: 100px;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+}

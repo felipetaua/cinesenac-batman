@@ -84,3 +84,10 @@ h1{
     cursor: pointer;
     border-radius: 10px;
 }
+
+/* Responsividade */
+@media(max-width: 768){
+    .localizacao iframe{
+        width: 95%;
+    }
+}
